@@ -1,0 +1,70 @@
+/* 
+allgemeines Styling
+*/
+
+/* Soft Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-size: 2rem; /* 32 px = 2*16px in Browser */
+/* color: white;
+background-image: url(/northern-lights.webp);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed; */
+/* }  */
+
+button {
+  width: 200px;
+  height: 100px;
+  border: 5px solid red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  color: green;
+  background-color: burlywood;
+}
+/* FLEXBOX */
+/* Vaterknoten -> richtet seine div's in der flex aus. */
+main {
+  /* macht aus der main eine Flexbox */
+  display: flex;
+  /* Standartwert: von links nach rechts */
+  flex-direction: row; /*  alternativ column: von oben nach unten */
+  /* wenn in der Zeile kein Platz bleibt, springen die Elemente in die nächste Zeile */
+  flex-wrap: wrap;
+
+  /*  Zentrierung der Elemente*/
+  /*  in diesem fall die hozizontale Ausrichtung*/
+  justify-content: center; /* Pufferplatz wird gleichmäßig auf alle 
+    elemente aufgeteilt. */
+
+  /* vertikale Ausrichtung */
+  height: 100vh;
+  align-items: center;
+
+  /* optional -> der gesamte Inhalt rückt an des untere Ende der Flexbox*/
+  /* align-content: flex-end; */
+}
+
+section {
+  width: 90vw;
+  height: 90vh;
+  /* selber Flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/northern-lights.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* text-align: center; */
